@@ -10,6 +10,7 @@ body{
     font-size: 1em;
     background-color: #FFFFFF;
     color: #000000;
+    width: 1500px;
 }
 
 #main_wrapper {
@@ -424,40 +425,38 @@ footer li {
  /*mediaqueries : site responsive */
 
 @media all and (max-width : 1280px) {
-    #main_wrapper { width : auto;}
+    #main_wrapper { width : auto;
+    margin: auto;}
 }
 
 /* pour les tablettes 768-991px */
 
 @media all and (max-width : 1000px){
-    #main_wrapper { width: auto;}
+    #main_wrapper { width: auto;
+    margin: auto;}
     #search_filters p{ 
         display: flex;
         align-items: center;
         align-content: stretch;
     }
 
-    
-    /* faire en sorte que les filtres se placent les uns en dessous des autres quand la taille de l'écran diminue! */
    
     
 }
-
-    
-
 
 
 
 /* pour les smartphones <768px */
 @media all and (max-width : 768px){
-    #main_wrapper{width:auto;}
+    body{width:auto;
+    margin: auto;}
     .boutons_nav{
         border-bottom: 3px #f2f2f2 solid;
         padding: 0 0 0 20px;
         font-size: 24px;
     }
     nav{
-        width:770px;
+        width:480px;
     } 
     .boutons_nav:hover{ 
         color:#0065FC;
@@ -468,7 +467,9 @@ footer li {
     }
     
     #sign_in{
-        position:absolute;
+        position: absolute;
+        top: 30px;
+        left: 380px;
         
     }
     .ligne_menu{
@@ -478,17 +479,24 @@ footer li {
     #logo{
         position:absolute;
         top:0px;
+        margin: 10px;
     }
-    .bouton {
-        /* changer la value "rechercher" par le <i class="fas fa-magnigying-glass"></i> */
+    #banniere_recherche{
+        margin: 8px;
+    }
+    #search_filters{
+        width:auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #search_filters p{
+        margin: 8px;
     }
     
-    /* faire en sorte que les filtres s'affichent les uns au dessous des autres */
-
 
     .populaires{
         position:absolute;
-        width: 100%;
+        width: 480px;
         margin:auto;
     }
     .populaires .vignette{
@@ -499,13 +507,13 @@ footer li {
         flex-direction: column;
         background-color: #FFFFFF;
         border:none;
-        width:100%;
-        margin: 700px 0 0 0;
+        width:400px;
+        margin: 700px 0 0 30px;
     }
     #hebergement .vignette{
         width: 400px;
         height: 290px;
-        margin: 20px 0 0 30px;
+        margin: 20px 0 0 10px;
     }
     #hebergement img{
         width: 400px;
@@ -522,7 +530,7 @@ footer li {
     
     
     #activites{
-        margin: 2090px 0 0 30px;
+        margin: 2090px 0 0 40px;
         width: 400px;
     }
     #activites h1{
