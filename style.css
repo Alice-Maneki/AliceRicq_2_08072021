@@ -424,9 +424,13 @@ footer li {
 
  /*mediaqueries : site responsive */
 
-@media all and (max-width : 1024px) {
+@media (min-width : 768px) and (max-width : 1024px) {
     body { width : 1000px;
     margin: auto;}
+    footer{
+        display:flex;
+        flex-direction: row;
+    }
 
 }
 
