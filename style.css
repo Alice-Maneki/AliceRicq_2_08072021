@@ -424,40 +424,22 @@ footer li {
 
  /*mediaqueries : site responsive */
 
-@media all and (max-width : 1280px) {
-    #main_wrapper { width : auto;
+@media all and (max-width : 1024px) {
+    body { width : 1000px;
     margin: auto;}
+
 }
 
-/* pour les tablettes 768-991px */
 
-@media all and (max-width : 1000px){
-    #main_wrapper { width: auto;
-    margin: auto;}
-    #search_filters p{ 
-        display: flex;
-        align-items: center;
-        align-content: stretch;
-    }
 
-   
-    
-}
 
 
 
 /* pour les smartphones <768px */
 @media all and (max-width : 768px){
-    body{width:auto;
+    body{width:750px;
     margin: auto;}
-    .boutons_nav{
-        border-bottom: 3px #f2f2f2 solid;
-        padding: 0 0 0 20px;
-        font-size: 24px;
-    }
-    nav{
-        width:480px;
-    } 
+
     .boutons_nav:hover{ 
         color:#0065FC;
         border-bottom: 3px #0065FC solid;
@@ -465,21 +447,28 @@ footer li {
         padding-bottom: 20px;
         border-top:none;
     }
+    .boutons_nav{
+        border-bottom: 3px #f2f2f2 solid;
+        padding: 0 0 0 20px;
+        font-size: 24px;
+    }
+    .ligne_menu{
+        margin: 150px 0 20px 0;
+        padding : 30px;
+    }
+  
     
     #sign_in{
         position: absolute;
-        top: 30px;
-        left: 345px;
+        top: 60px;
+        left: 550px;
         
     }
-    .ligne_menu{
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
+    
     #logo{
         position:absolute;
         top:0px;
-        margin: 10px;
+        margin: 30px;
     }
     #banniere_recherche{
         margin: 8px;
@@ -496,63 +485,82 @@ footer li {
 
     .populaires{
         position:absolute;
-        width: 480px;
-        margin:auto;
+        width: 700px;
+        height: 790px;
+    }
+    #populaires_titre h1{
+        font-size: 30px;
     }
     .populaires .vignette{
-        width: 400px;
+        width: 500px;
+        height: 200px;
+    }
+    .populaires img{
+        width: 250px;
+        height: 200px;
     }
     #hebergement{
         display:flex;
         flex-direction: column;
         background-color: #FFFFFF;
         border:none;
-        width:400px;
-        margin: 700px 0 0 30px;
+        width:750px;
+        margin: 820px 0 0 0;
+    }
+    #hebergement h1{
+        font-size: 30px;
+        margin: 10px 0 10px 30px;
     }
     #hebergement .vignette{
-        width: 400px;
+        width: 500px;
         height: 290px;
-        margin: 20px 0 0 10px;
+        margin: 20px 0 0 50px;
     }
     #hebergement img{
-        width: 400px;
+        width: 500px;
         height: 190px;
     }
     #ligne_haut{
         display:flex;
         flex-direction:column;
+        
     }
     #ligne_bas{
         display:flex;
         flex-direction:column;
+       
     }
-    
+    .afficher_plus{
+        font-size: 30px;
+        margin: 30px 0 20px 100px;
+    }
     
     #activites{
-        margin: 2090px 0 0 40px;
-        width: 400px;
+        margin: 2200px 0 0 0;
+        width: 700px;
     }
     #activites h1{
-        margin: 10px 0 30px 0;
+        margin: 10px 0 30px 70px;
+        font-size: 30px;
     }
     #activites_img{
         display:flex;
         flex-direction: column;
+        align-items: center;
     }
     .photo1{
-        width:400px;
+        width:500px;
         margin: 30px 0 30px 0;
         height: 300px;
     }
     .photo2{
-        width:400px;
+        width:500px;
         margin:0 0 30px 0;
         height: 300px;
     }
     
     #activites img{
-        width:400px;
+        width:500px;
         height: 250px;
         object-fit: cover;
     }
@@ -561,10 +569,26 @@ footer li {
     footer{
         display:flex;
         flex-direction:column;
+        align-self: flex-start;
         position:absolute;
         margin-top: 30px;
         background-color: #F2F2F2;
-        width: 100%;
+        width: 750px;
         height: 800px;
+    }
+    #A_propos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #hebergements{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #assistance{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
