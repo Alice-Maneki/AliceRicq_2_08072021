@@ -7,7 +7,6 @@
 /* corps complet de la page*/
 body{
     font-family: 'Raleway', sans-serif, serif;
-    font-size: 1em;
     background-color: #FFFFFF;
     color: #000000;
     width: 1500px;
@@ -399,7 +398,7 @@ footer {
     flex-direction: row;
     align-content: space-evenly;
     background-color: #F2F2F2;
-    width:100%;
+    width:1500px;
     height:200px;
     margin:auto;
 }
@@ -424,25 +423,25 @@ footer li {
 
  /*mediaqueries : site responsive */
 
-@media (min-width : 768px) and (max-width : 1024px) {
-    body { width : 1000px;
-    margin: auto;}
-    footer{
-        display:flex;
-        flex-direction: row;
+ /* pour les tablettes 768px - 1024px */
+ @media (min-width:768px) and (max-width: 1024px){
+    #hebergement{
+        margin: 0 20px 0 0;
     }
-
-}
-
-
-
-
-
+    .populaires{
+        margin: 0 25px 0 0;
+    }
+    .populaires .vignette{
+        width: 300px;
+    }
+    .populaires img{
+        width: 120px;
+    }
+ }  
 
 /* pour les smartphones <768px */
-@media all and (max-width : 768px){
-    body{width:750px;
-    margin: auto;}
+@media screen and (max-width : 450px){
+    
 
     .boutons_nav:hover{ 
         color:#0065FC;
@@ -454,7 +453,8 @@ footer li {
     .boutons_nav{
         border-bottom: 3px #f2f2f2 solid;
         padding: 0 0 0 20px;
-        font-size: 24px;
+        margin: 0 0 0 100px;
+        font-size: 50px;
     }
     .ligne_menu{
         margin: 150px 0 20px 0;
@@ -465,14 +465,16 @@ footer li {
     #sign_in{
         position: absolute;
         top: 60px;
-        left: 550px;
-        
+        left: 750px;
+        font-size: 50px;
+        margin: 0 0 0 120px;
     }
     
     #logo{
         position:absolute;
         top:0px;
         margin: 30px;
+        height: 100px;
     }
     #banniere_recherche{
         margin: 8px;
@@ -485,44 +487,52 @@ footer li {
     #search_filters p{
         margin: 8px;
     }
-    
-
-    .populaires{
-        position:absolute;
-        width: 700px;
-        height: 790px;
+    #banniere_recherche h1{
+        font-size:40px;
     }
-    #populaires_titre h1{
+    #banniere_recherche p{
         font-size: 30px;
     }
+    
+    .populaires{
+        position: absolute;
+        height: 900px;
+        width: 700px;
+        margin: 0 0 0 270px;
+
+    }
+    #populaires_titre h1{
+        font-size: 50px;
+    }
     .populaires .vignette{
-        width: 500px;
+        width: 600px;
         height: 200px;
     }
     .populaires img{
-        width: 250px;
+        width: 300px;
         height: 200px;
     }
     #hebergement{
         display:flex;
         flex-direction: column;
+        align-items: center;
         background-color: #FFFFFF;
         border:none;
-        width:750px;
-        margin: 820px 0 0 0;
+        margin: 930px 0 0 0;
     }
     #hebergement h1{
-        font-size: 30px;
-        margin: 10px 0 10px 30px;
+        font-size: 60px;
+        margin: 10px 0 10px 0;
     }
     #hebergement .vignette{
-        width: 500px;
-        height: 290px;
-        margin: 20px 0 0 50px;
+        width: 700px;
+        height: 300px;
+        margin: 30px 0 0 170px;
     }
     #hebergement img{
-        width: 500px;
-        height: 190px;
+        width: 700px;
+        height: 195px;
+        object-fit: cover;
     }
     #ligne_haut{
         display:flex;
@@ -536,35 +546,35 @@ footer li {
     }
     .afficher_plus{
         font-size: 30px;
-        margin: 30px 0 20px 100px;
+        margin: 30px 0 20px 150px;
     }
     
     #activites{
-        margin: 2200px 0 0 0;
-        width: 700px;
+        margin: 2500px 0 0 0;
+        
     }
     #activites h1{
-        margin: 10px 0 30px 70px;
-        font-size: 30px;
+        margin: 20px 0 30px 150px;
+        font-size: 60px;
     }
     #activites_img{
         display:flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
     }
     .photo1{
-        width:500px;
+        width:700px;
         margin: 30px 0 30px 0;
         height: 300px;
     }
     .photo2{
-        width:500px;
+        width:700px;
         margin:0 0 30px 0;
         height: 300px;
     }
     
     #activites img{
-        width:500px;
+        width:700px;
         height: 250px;
         object-fit: cover;
     }
@@ -577,7 +587,6 @@ footer li {
         position:absolute;
         margin-top: 30px;
         background-color: #F2F2F2;
-        width: 750px;
         height: 800px;
     }
     #A_propos{
