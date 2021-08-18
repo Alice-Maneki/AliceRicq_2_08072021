@@ -484,11 +484,15 @@ footer li {
         display: flex;
         flex-flow: row wrap;
     }
+    .filtres h2 {
+        font-size: 40px;
+    }
     #search_filters p{
-        margin: 8px;
+        margin: 15px;
+        font-size: 40px;
     }
     #banniere_recherche h1{
-        font-size:40px;
+        font-size:50px;
     }
     #banniere_recherche p{
         font-size: 30px;
@@ -545,8 +549,8 @@ footer li {
        
     }
     .afficher_plus{
-        font-size: 30px;
-        margin: 30px 0 20px 150px;
+        font-size: 45px;
+        margin: 30px 0 20px 0;
     }
     
     #activites{
@@ -554,7 +558,7 @@ footer li {
         
     }
     #activites h1{
-        margin: 20px 0 30px 150px;
+        margin: 20px 0 30px 200px;
         font-size: 60px;
     }
     #activites_img{
@@ -575,8 +579,11 @@ footer li {
     
     #activites img{
         width:700px;
-        height: 250px;
+        height: 230px;
         object-fit: cover;
+    }
+    #activites h3{
+        font-size: 20px;
     }
 
     /* footer */
@@ -603,5 +610,11 @@ footer li {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    footer h2{
+        font-size: 30px;
+    }
+    footer li{
+        font-size: 25px;
     }
 }
