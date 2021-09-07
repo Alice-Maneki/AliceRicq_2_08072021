@@ -1,0 +1,436 @@
+/* reprise du css pour organisation */
+
+/* table des matières :
+- structure globale de la page 
+- header : logo / nav / nav au survol
+- bannière recherche : saisie / filtres / filtres au survol / info
+- zone hébérgements
+- zone populaires 
+- zone activites
+- footer
+- responsive : tablettes / mobiles
+*/
+
+/*structure globale de la page */
+    /*police */
+@font-face {
+    font-family:'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf');
+    src: url('Raleway/static/Raleway-Regular.ttf');       
+}
+
+    /* corps de la page*/
+body{
+    font-family: 'Raleway', sans-serif, serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.1rem;
+    max-width: 97%;
+    margin: auto;
+}
+
+    /* affichage des liens et listes */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+i {
+    color: #0065FC;
+}
+
+/* header */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* logo : position et taille */
+#logo img{
+    width: 200px;
+    height: 90px;
+    object-fit: cover;
+}
+
+    /* nav */
+.menu {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.boutons_nav{
+    margin-right: 100px;
+}
+#sign_in {
+    font-weight: 1000;
+    color: #0065FC;
+}
+
+    /* nav : comportement au survol */
+
+.boutons_nav:hover {
+        color:#0065FC;
+        font-weight: 1000;
+        border-top: 3px #0065FC solid;
+        padding-top: 30px;
+    }
+    
+#sign_in:hover {
+        color: #000;
+        border-top: 3px #000 solid;
+        padding-top:30px;
+    }
+
+/* bannière recherche */
+h1{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+    /* zone de saisie : recherche par ville */
+form {
+        display:flex;
+        flex-wrap: nonwrap;
+        align-items: center;
+    }
+    .bouton {
+        color : #FFFFFF;
+        font-size: 1.3rem;
+        background-color: #0065FC;
+        border-color: #0065FC;
+        border-radius: 0 15px 15px 0;
+        padding: 14px;
+    }
+    .recherche i {
+        color : #000000;
+        font-size: 1.3rem;
+        border-radius: 15px 0 0 15px;
+        border-color :#F2F2F2;
+        border-style:solid;
+        background-color: #F2F2F2;
+        padding: 15px;
+    }    
+    .recherche_barre{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 14px;
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+        border-left: none;
+        border-right: none;
+    }
+    
+    /* zone de filtres : selection pour affiner sa recherche */
+h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.filtres {
+    display:flex;
+    align-items : center;
+}
+
+        /* search filters */
+        #search_filters{
+            display:flex;  
+        }
+        #search_filters p{
+            font-weight: 1000;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            border-top: 3px solid rgb(217,217,217);
+            border-bottom: 3px solid rgb(217,217,217);
+            border-right: 3px solid rgb(217,217,217);
+            border-left: none;
+            margin-right: 40px;
+            padding-right: 20px;
+            
+        }
+        #search_filters i{
+            border-radius: 50px ;
+            border:3px solid RGB(222,235,255);
+            background-color: RGB(222,235,255);
+            padding: 16px ;
+            margin-right: 10px;
+        }
+
+        /* search filters : comportement au survol */
+        #search_filters i:hover{
+            background-color: #0065FC;
+            color: RGB(222,235,255);
+        }
+
+    /* info */
+        #info {
+            display:flex;
+            align-items:center;    
+        }
+        #info i{
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+/* zone hébérgements */
+#zone2 {
+    display:flex;
+    margin-top: 30px;
+}
+#zone2 h1{
+    font-weight: 1000;
+    font-size: 1.6rem;
+    margin: 30px;
+}
+#zone2 h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 10px;
+}
+#zone2 p{
+    margin: 10px;
+}
+.star{
+    display:flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 10px;
+}
+.grey i{
+    color:#F2F2F2;
+}
+
+#hebergement{
+        background-color: #F2F2F2;
+        border-radius:10px;
+        border: 0 solid #F2F2F2;
+        width: 70%;
+        height: 850px;
+}
+#hebergement .vignette{
+        border-radius: 20px;
+        border: 0 solid #FFF;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 15px grey;
+        object-fit: cover;
+        width: 280px;
+        height: 260px;
+        padding: 5px;
+        margin: 25px;
+}
+#hebergement img{
+        border-radius: 20px 20px 0 0;
+        width: 280px;
+        height: 150px;
+}
+#ligne_haut{
+        display:flex;
+}
+#ligne_bas{
+        display:flex;
+}
+.afficher_plus{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 30px;
+}
+
+/* zone populaires */
+aside{
+    width:28%;
+    height: 850px;
+    border-radius: 10px;
+    border: 0 solid #F2F2F2;
+    background-color: #F2F2F2;
+    margin-left: 40px;
+}
+#populaires_titre {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right : 20px;
+}
+#populaires_titre i{
+    color: #000000;
+    font-size: 1.8rem;
+}
+#populaires_titre h3{
+    font-weight: 1000;
+    font-size: 1.6rem;
+}
+aside .vignette{
+    display:flex;
+    border-radius: 20px;
+    border: 3px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 15px grey;
+    padding: 5px;
+    width : 85%;
+    height: 170px;
+    margin: 30px;
+}
+aside img{
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    width :140px;
+    height: 170px;
+    margin-right: 15px;
+}
+aside h3{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+aside .star{
+    margin-top: 55px;
+}
+
+/* zone activites */
+#activites{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+#activites_img{
+    display:flex;
+    justify-content: space-around;
+}
+.photo1 {
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    box-shadow: 2px 2px 15px grey;
+    width: 320px;
+    height: 620px;
+}
+.photo1 img{
+    width: 320px;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.photo2{
+    border-radius: 20px;
+    border-color: #FFFFFF;
+    box-shadow: 2px 2px 15px grey;
+    width: 320px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.photo2 img{
+    width:320px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+#activites h1{
+    font-size: 1.6rem;
+    font-weight: 1000;
+    margin: 30px;
+}
+#activites h3{
+    font-size: 1.2rem;
+    font-weight: 1000;
+    margin: 20px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F2F2F2;
+    width:100%;
+    height:200px;
+    margin:auto;
+}
+ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+/* responsive : s'adapte aux tailles d'écrans */
+        /* tablettes : 768px à 1024px */
+
+@media (min-width: 768px) and (max-width:1024px){
+/* zone de recherche et filtres */
+    .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #search_filters {
+        display: flex;
+        flex-flow: row wrap;
+    }
+/* zone hebergements */
+    #zone2 {
+        display : flex;
+        flex-direction: column-reverse;
+    }
+    #hebergement{
+        width: 100%;
+    }
+    #ligne_haut{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #ligne_bas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+/* zone populaires */
+    .populaires {
+        width: 100%;
+        height: 300px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .populaires_vignette{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    aside p{
+        font-size: 0.9rem;
+    }
+    aside img{
+        width: 100px;
+        margin-right: 5px;
+    }
+    aside .star{
+        margin-top: 0;
+    }
+    .populaires_vignette .vignette{
+        margin: 0;
+        width: 290px;
+    }
+    /*zone activites */
+    .photo1 {
+        width: 220px;
+        height: 560px;
+    }
+    .photo1 img{
+        width: 220px;
+        height: 490px;
+    }
+    .photo2{
+        width: 220px;
+        height: 270px;
+        }
+    .photo2 img{
+        width:220px;
+        height: 198px;
+    }
+    #activites h3{
+        margin: 10px;
+    }
+
+}
+        
+    /* smartphones : <768px */
+@media screen and (max-width : 768px){
+    
+}       
+        
