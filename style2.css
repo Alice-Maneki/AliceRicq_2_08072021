@@ -449,17 +449,19 @@ header{
 .ligne_menu{
     border-bottom: 3px solid #F2F2F2;
     padding: 15px;
+    width: 100%;
 }
 .ligne_menu:hover{
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
+    border-top: none;
 }
 
 /* zone de recherche */
-.zone_saisie .recherche_barre{
-    width: 180px;
+.recherche_barre{
+    width: 80%;
+    
 }
-
 
 /* zone populaires */
 .populaires_vignette{
