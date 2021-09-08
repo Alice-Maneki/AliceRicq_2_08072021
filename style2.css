@@ -8,7 +8,7 @@
 - zone populaires 
 - zone activites
 - footer
-- responsive : tablettes / mobiles
+- responsive : tablettes / smartphones
 */
 
 /*structure globale de la page */
@@ -350,7 +350,7 @@ ul {
 /* responsive : s'adapte aux tailles d'écrans */
         /* tablettes : 768px à 1024px */
 
-@media (min-width: 768px) and (max-width:1024px){
+@media all and (max-width:1024px){
 /* zone de recherche et filtres */
     .filtres{
         display: flex;
@@ -431,6 +431,109 @@ ul {
         
     /* smartphones : <768px */
 @media screen and (max-width : 768px){
+body{
+    max-width: 95%;
+    margin: auto;
+}
+/* header : menu nav */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#sign_in{
+    position: absolute;
+    top: 30px;
+    right: 30px
+}
+.ligne_menu{
+    border-bottom: 3px solid #F2F2F2;
+    padding: 15px;
+}
+.ligne_menu:hover{
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+
+/* zone de recherche */
+.zone_saisie .recherche_barre{
+    width: 180px;
+}
+
+
+/* zone populaires */
+.populaires_vignette{
+    display: flex;
+    flex-direction: column;
+}
+.populaires{
+    width: 100%;
+    height: 700px;
+}
+.populaires_vignette .vignette{
+    width: 90%;
+    height: 170px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*zone hebergements */
+#hebergement{
+    max-width: 100%;
+    height: 1900px;
+    background-color: #fff;
+}
+#ligne_haut{
+    display:flex;
+    flex-direction: column;
+}
+#ligne_bas{
+    display: flex;
+    flex-direction: column;
+}
+#hebergement .vignette{
+    width:96%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#hebergement img{
+    width: 100%;
+}
+
+/* zone activites */
+#activites_img{
+    display: flex;
+    flex-direction: column;
     
+}
+.photo1{
+    width: 100%;
+    height: 250px
+}
+.photo1 img{
+    width: 100%;
+    height: 200px;
+}
+.photo2{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+.photo2 img{
+    width: 100%;
+    height: 200px;
+}
+
+/* footer */
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+#assistance{
+    margin-left: -70px;
+}
 }       
         
