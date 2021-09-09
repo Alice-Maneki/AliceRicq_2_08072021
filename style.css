@@ -348,9 +348,33 @@ ul {
 }
 
 /* responsive : s'adapte aux tailles d'écrans */
-        /* tablettes : 768px à 1024px */
+        /* écrans entre 1400 px et 1470px */
+@media all and (max-width: 1470px){
+    #hebergement .vignette{
+        margin-left: 10px; 
+    }
+    #hebergement{
+        height: 800px;
+    }
+    .populaires{
+        height: 800px;
+    }
+    aside .vignette{
+        margin-left: 10px;
+        height: 190px;
+    }
+    aside img{
+        height: 190px;
+    }
+    aside .star{
+        margin-top: 10px;
+    }
+}
+     
 
-@media all and (max-width:1300px){
+        /* tablettes : 950px à 1400px */
+
+@media all and (max-width:1400px){
 /* zone de recherche et filtres */
     .filtres{
         display: flex;
@@ -383,7 +407,7 @@ ul {
 /* zone populaires */
     .populaires {
         width: 100%;
-        height: 300px;
+        height: 320px;
         margin-left: 0;
         margin-bottom: 20px;
     }
@@ -429,13 +453,9 @@ ul {
 
 }
         
-    /* smartphones : <768px */
-@media screen and (max-width : 768px){
-body{
-    max-width: 100%;
-    
-    
-}
+    /* smartphones : <768px*/
+@media screen and (max-width : 800px){
+
 /* header : menu nav */
 header{
     display: flex;
@@ -445,10 +465,9 @@ header{
 #sign_in{
     position: absolute;
     top: 30px;
-    right: 30px
+    right: 10px;
 }
 .ligne_menu{
-    border-top: none;
     border-bottom: 3px solid #F2F2F2;
     padding: 15px;
     width: 100%;
@@ -456,13 +475,9 @@ header{
 .ligne_menu:hover{
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
+    border-top: none;
 }
 
-/* zone de recherche */
-.recherche_barre{
-    width: 80%;
-    
-}
 
 /* zone populaires */
 .populaires_vignette{
@@ -470,7 +485,7 @@ header{
     flex-direction: column;
 }
 .populaires{
-    width: 100%;
+    width: 120%;
     height: 700px;
 }
 .populaires_vignette .vignette{
@@ -479,10 +494,13 @@ header{
     margin: auto;
     margin-bottom: 10px;
 }
+.populaires_vignette img{
+    height: 170px;
+}
 
 /*zone hebergements */
 #hebergement{
-    width: 100%;
+    width: 120%;
     height: 1900px;
     background-color: #fff;
 }
@@ -510,7 +528,7 @@ header{
     
 }
 .photo1{
-    width: 100%;
+    width: 120%;
     height: 250px
 }
 .photo1 img{
@@ -518,7 +536,7 @@ header{
     height: 200px;
 }
 .photo2{
-    width: 100%;
+    width: 120%;
     height: 250px;
     margin-top: 20px;
 }
@@ -532,7 +550,7 @@ footer{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 120%;
     height: 500px;
 }
 #assistance{
