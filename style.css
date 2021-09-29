@@ -524,7 +524,7 @@ ul {
 }
 
     /* smartphones : <768px*/
-@media screen and (max-width : 760px){
+@media (min-width : 320px) and (max-width : 760px){
 
 /* header : menu nav */
 header{
@@ -556,7 +556,7 @@ header{
     flex-direction: column;
 }
 .populaires{
-    width: 120%;
+    width: 140%;
     height: 700px;
 }
 .populaires_vignette .vignette{
@@ -571,7 +571,7 @@ header{
 
 /*zone hebergements */
 #hebergement{
-    width: 120%;
+    width: 140%;
     height: 1900px;
     background-color: #fff;
 }
@@ -600,7 +600,7 @@ header{
     
 }
 .photo1{
-    width: 120%;
+    width: 140%;
     height: 250px
 }
 .photo1 img{
@@ -608,7 +608,7 @@ header{
     height: 200px;
 }
 .photo2{
-    width: 120%;
+    width: 140%;
     height: 250px;
     margin-top: 20px;
 }
@@ -622,7 +622,7 @@ footer{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 120%;
+    width: 140%;
     height: 500px;
 }
 #assistance{
